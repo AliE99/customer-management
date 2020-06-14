@@ -17,6 +17,7 @@ from .filters import OrderFilter
 from .decorators import unauthenticated_user, allowed_users, admin_only
 
 
+
 @unauthenticated_user
 def registerPage(request):
     form = CreateUserForm()
@@ -28,6 +29,9 @@ def registerPage(request):
 
             group = Group.objects.get(name='customer')
             user.groups.add(group)
+            Customer.objects.create(
+                user=user,
+            )
 
             messages.success(request, 'Account was created for ' + username)
 
@@ -35,6 +39,7 @@ def registerPage(request):
 
     context = {'form': form}
     return render(request, 'accounts/register.html', context)
+
 
 
 @unauthenticated_user
@@ -55,9 +60,11 @@ def loginPage(request):
     return render(request, 'accounts/login.html', context)
 
 
+
 def logoutPage(request):
     logout(request)
     return redirect('login')
+
 
 
 @login_required(login_url='login')
@@ -79,9 +86,14 @@ def home(request):
     return render(request, 'accounts/dashboard.html', context)
 
 
+
+@login_required(login_url='login')
+@allowed_users(allowed_roles=['customer'])
 def userPage(request):
-    context = {}
+    orders = request.user.customer.order_set.all()
+    context = {'orders': orders}
     return render(request, 'accounts/user.html', context)
+
 
 
 @login_required(login_url='login')
@@ -90,6 +102,7 @@ def products(request):
     products = Product.objects.all()
 
     return render(request, 'accounts/products.html', {'products': products})
+
 
 
 @login_required(login_url='login')
@@ -106,6 +119,7 @@ def customer(request, pk_test):
     context = {'customer': customer, 'orders': orders, 'order_count': order_count,
                'myFilter': myFilter}
     return render(request, 'accounts/customer.html', context)
+
 
 
 @login_required(login_url='login')
@@ -127,6 +141,7 @@ def createOrder(request, pk):
     return render(request, 'accounts/order_form.html', context)
 
 
+
 @login_required(login_url='login')
 @allowed_users(allowed_roles=['admin'])
 def updateOrder(request, pk):
@@ -141,6 +156,7 @@ def updateOrder(request, pk):
 
     context = {'form': form}
     return render(request, 'accounts/order_form.html', context)
+
 
 
 @login_required(login_url='login')
