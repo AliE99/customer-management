@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc5a742b-2cfc-4f55-8620-9a7bf85ce48c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/migrations/0006_customer_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0007_customer_profile_pic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/account_settings.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,7 +56,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="crm" type="Python.DjangoServer" factoryName="Django server">
@@ -110,7 +115,10 @@
       <workItem from="1592139154012" duration="1071000" />
       <workItem from="1592140735616" duration="486000" />
       <workItem from="1592141372547" duration="171000" />
-      <workItem from="1592141559419" duration="1120000" />
+      <workItem from="1592141559419" duration="1306000" />
+      <workItem from="1592234835326" duration="377000" />
+      <workItem from="1592235232316" duration="236000" />
+      <workItem from="1592235486312" duration="2762000" />
     </task>
     <servers />
   </component>
@@ -125,14 +133,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591283564179" />
+    <state x="596" y="103" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1592235580348">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="596" y="103" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1536.824@0.0.1536.824" timestamp="1592235580348" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1592141221898">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1592141221898" />
-    <state x="543" y="71" key="SettingsEditor" timestamp="1592141542636">
+    <state x="555" y="60" width="981" height="707" key="SettingsEditor" timestamp="1592235452082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="543" y="71" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592141542636" />
+    <state x="555" y="60" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592235452082" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590932129477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

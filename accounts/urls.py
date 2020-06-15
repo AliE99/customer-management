@@ -3,10 +3,14 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name="home"),
+    path('user/', views.userPage, name="user-page"),
+
     path('register/', views.registerPage, name="register"),
     path('login/', views.loginPage, name="login"),
     path('logout/', views.logoutPage, name="logout"),
-    path('user/', views.userPage, name="user-page"),
+
+    path('accounts/', views.accountSetting, name="account"),
+
     path('products/', views.products, name="products"),
     path('customer/<str:pk_test>/', views.customer, name="customer"),
 
