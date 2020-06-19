@@ -1,4 +1,4 @@
-# crm
+# customer-management
 Building a customer management app
 
 A CRM, Customer Relationship Management,is a technology for managing all your company's relationships
